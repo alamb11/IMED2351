@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>functions</title>
+</head>
+
+<body style="background-color:pink">
+    
+<h1 style="color:darkred;">Hello! Here are the many different types of Javascript Functions</h1>
+    
+<h4 style="color:darkred">This method function takes a string and puts out the text length of the string. Look!</h4>
+    
+<p>The text length of the string is:</p>
+
+<p id="method"></p>    
+<script> 
+let text = "Hi This is my Method";
+    document.getElementById("method").innerHTML = text.length;
+</script>
+ 
+<h3>This function changes the color of the text when it is clicked on: </h3>
+<h2 id="colorchange" onclick="myFunction()" style="background-color:lavender">Click here!</h2>
+    
+<script>
+function myFunction() {document.getElementById("colorchange").style.color = "hotpink"}    
+</script>
+
+<h2>Functions are also great for solving equations, just like this one:</h2>
+<h4>This function equals:</h4>
+    
+<p id="equation"></p>
+<script>
+let x = myFunction(525,21);document.getElementById("equation").innerHTML = x;
+    
+function myFunction(a,b) {
+return a*b;}
+</script>
+    
+<h2>Functions can also display object information that is put in, for example:</h2>
+<p>This function will display my data here!</p>
+
+<p id="me"></p>
+    
+<script>
+const person = {};
+    
+person.firstName = "Alana";
+person.lastName = "Lamb";
+person.age = "20";
+person.major = "Digital Media"
+    
+document.getElementById("me").innerHTML = "My name is " + person.firstName + " " + person.lastName + ".  " + "I am " + person.age + " years old, and my major is " + person.major;
+</script>
+</body>
+</html>
